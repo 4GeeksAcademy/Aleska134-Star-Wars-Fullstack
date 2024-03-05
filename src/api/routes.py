@@ -137,6 +137,7 @@ def add_new_favorite_planet(planet_id):
             serialized_favorites.append(favorite.serialize())
     response_body = {
         "message": "Planet successfully added to your favorites, here is the new list", "favorites" : serialized_favorites
+        
     }
 
     return jsonify(response_body), 200
